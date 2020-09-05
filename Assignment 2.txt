@@ -1,0 +1,45 @@
+1. Use typeof in all the datatypes available.
+Ans.
+	- typeof(1) -> number
+	- typeof("1") -> string
+	- typeof(true) -> boolean
+	- typeof(null) -> object
+	- typeof(undefined) -> undefined
+	- typeof([]) -> object
+	- typeof({}) -> object
+
+2. Write a blog about objects and its internal representation in Javascript.
+Ans.
+	Object is a collection of characteristics/properties and methods.
+
+	for eg: let student = {
+				name: "Hitesh",
+				address: "Air Force Stn",
+				Mobile: 11111,
+				updateAddress: () => {
+						//code to implement the logic
+						}
+				}
+
+	Basically we can store variety of data types in an object as key value pair.
+	In the above example "name" is an object key and can be accessed via Dot notation
+	eg: student.name or via brackets student["name"].
+
+	In JS, almost everything is a object only. eg: array, String, function etc. Lets understand this better
+	using an example.
+	We have an array arr = [1, 2, 3, 4];
+	To get the length of the array we use arr.length -> So from where did this length property come 
+	into action. Thats where object and inheritance come into play. When we create an arr, it is
+	an object of an Array and hence all the properties of Array are transferred or implemented in our
+	arr and hence we are able to use different properties.
+
+	Lets take an example of how to create an object and add properties to it:
+	var employee = new Object();
+	employee.name = "Hitesh";
+	employee.experience = 1;
+	
+	Also, if we try to access a property which doesnt exist,
+	eg -> employee.age; //we get undefined (not null)
+
+
+
